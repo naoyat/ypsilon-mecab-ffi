@@ -32,9 +32,7 @@
                  )
          (import (rnrs) (core)
                  (rnrs r5rs)
-;                 (ypsilon ffi)
-				 (ffi)
-                 )
+                 (ypsilon ffi))
 
 (define libmecab (load-shared-object "libmecab.1.dylib"))
 
