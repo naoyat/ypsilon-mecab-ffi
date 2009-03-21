@@ -36,7 +36,6 @@
 				 (ffi)
                  )
 
-;(define libmecab (open-shared-library "/usr/local/lib/libmecab.1.dylib"))
 (define libmecab (load-shared-object "libmecab.1.dylib"))
 
 ;(define-c-typedef mecab-t* void*)
@@ -44,9 +43,6 @@
 (define-c-typedef mecab-node-t** void*)
 (define-c-typedef mecab-path-t*  void*)
 (define-c-typedef mecab-token-t* void*)
-;(define-c-typedef uint int)
-;(define-c-typedef ushort short)
-;(define-c-typedef uchar char)
 
 (define-c-struct-type mecab-node-t
   (mecab-node-t*  prev)
